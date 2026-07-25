@@ -19,4 +19,6 @@ def chat():
     return jsonify({"reply": f"Juliana recebeu: {msg}", "pix": PIX, "zap": JULIANA_ZAP})
 
 # Linha obrigatória pro Vercel
-app = app
+@app.route("/api")
+def api():
+    return jsonify({"message": "API is running!"})

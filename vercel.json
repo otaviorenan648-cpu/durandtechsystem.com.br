@@ -1,7 +1,6 @@
 {
   "rewrites": [
     { "source": "/api/(.*)", "destination": "/api/index.py" },
-    { "source": "/orcamento", "destination": "/orcamento.html" },
     { "source": "/(.*)", "destination": "/$1" }
   ]
 }
