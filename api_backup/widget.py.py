@@ -4,13 +4,9 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-SITE = "https://www.durandtechsysten.com.br"
+SITE = "https://www.durandtechsystem.com.br"
 PIX = "00895672006"
-JULIANA_ZAP = "https://wa.me/5548998290105?text=Oi%20Juliana!%20Maquininha%20Ton%20200,74%25"
-
-@app.route("/")
-def home():
-    return jsonify({"status":"Durand Tech Bot Online com Juliana", "site": SITE, "pix": PIX})
+JULIANA_ZAP = "https://wa.me/5548998290105?text=Oi%20Juliana!%20Maquininha%20Ton%20200,0"
 
 @app.route("/api/chat", methods=["POST"])
 def chat():
